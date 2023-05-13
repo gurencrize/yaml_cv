@@ -1,11 +1,11 @@
 name: build pdf
 on:
   push:
-    branches:
-      - main
+    tags:
+    - 'v*'
  
 permissions:
-  contents: read
+  contents: write
   
 jobs:
   build-pdf:
